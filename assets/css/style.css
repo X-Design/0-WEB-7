@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: 'bettynoir';
+  src: url(/assets/fonts/bettynoir.woff) format('woff'),
+       url(/assets/fonts/bettynoir.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Bocklin';
+  src: url(/assets/fonts/Bocklin.woff) format('woff'),
+       url(/assets/fonts/Bocklin.woff2) format('woff2');
+}
+
+:root{
+	/* fonts */
+	--txt-fnt-1:'bettynoir', sans-serif;
+	--txt-fnt-3:'Bocklin',san-serif;
+}
+
+
