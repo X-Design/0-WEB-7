@@ -9,11 +9,22 @@
   src: url(/assets/fonts/Bocklin.woff) format('woff'),
        url(/assets/fonts/Bocklin.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'RivannaNf';
+  src: url(/assets/fonts/RivannaNf-7Yp4.woff) format('woff'),
+       url(/assets/fonts/RivannaNf-7Yp4.woff2) format('woff2');
+}
+
 
 :root{
 	/* fonts */
 	--txt-fnt-1:'bettynoir', sans-serif;
-	--txt-fnt-3:'Bocklin',san-serif;
+	--txt-fnt-3:'Bocklin', sans-serif;
+  --lgo-fnt:'RivannaNf', sans-serif;
 }
 
 
+.logo{
+  font-family: var(--lgo-fnt);
+  font-size: 3rem;
+}
