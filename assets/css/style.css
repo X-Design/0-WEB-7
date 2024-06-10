@@ -20,11 +20,20 @@
 	/* fonts */
 	--txt-fnt-1:'bettynoir', sans-serif;
 	--txt-fnt-3:'Bocklin', sans-serif;
-  --lgo-fnt:'RivannaNf', sans-serif;
+  --logo-fnt:'RivannaNf', sans-serif;
+  /* colors */
+  --clr-1:#879C7D;
+  --clr-2:#C7C285;
+  --clr-3:#F0C261;
+  --clr-4:#F6D499;
+  --clr-5:#9D2A3B;
+
 }
 
-
+body{
+  background-color: var(--clr-4);
+}
 .logo{
-  font-family: var(--lgo-fnt);
+  font-family: var(--logo-fnt);
   font-size: 3rem;
 }
