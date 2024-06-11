@@ -21,6 +21,10 @@
 	--txt-fnt-1:'bettynoir', sans-serif;
 	--txt-fnt-3:'Bocklin', sans-serif;
   --logo-fnt:'RivannaNf', sans-serif;
+
+  /* fontsize */
+  --fnt-size1:3em;
+
   /* colors */
   --clr-1:#879C7D;
   --clr-2:#C7C285;
@@ -83,10 +87,7 @@ body, html{
 body{
   background-color: var(--clr-4);
 }
-.logo{
-  font-family: var(--logo-fnt);
-  font-size: 3rem;
-}
+
 
 .header{
   position: fixed;
@@ -94,4 +95,49 @@ body{
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
+  background-color:rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo__huls {
+    display: flex;
+    align-items: center;  
+}
+.logo{
+  font-family: var(--logo-fnt);
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+.logo>span{
+  font-size: 2rem;
+}
+.first-two {
+  position: relative;
+ }
+
+.rest {
+    position: absolute;
+    left: 200%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar a{
+  font-size: 1.1rem;
+  color: var(--clr-5);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+}
+.icons{
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
 }
