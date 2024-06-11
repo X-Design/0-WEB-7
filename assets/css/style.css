@@ -94,7 +94,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.3rem 10%;
+  padding: 1.3rem 2%;
   background-color:rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
   display: flex;
@@ -103,18 +103,17 @@ body{
   z-index: 100;
 }
 .logo__huls {
-    display: flex;
-    align-items: center;  
+  display: flex;
 }
 .logo{
   font-family: var(--logo-fnt);
-  font-size: 3rem;
+  font-size: 10vw;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: .1em;
 }
 .logo>span{
-  font-size: 2rem;
+  font-size: 2vw;
 }
 .first-two {
   position: relative;
@@ -122,22 +121,27 @@ body{
 
 .rest {
     position: absolute;
-    left: 200%;
+    right: -100%;
     transform: translateX(-50%);
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .navbar a{
-  font-size: 1.1rem;
+  font-size: 2em;
   color: var(--clr-5);
   text-decoration: none;
   font-weight: 500;
-  margin-left: 2.5rem;
+  margin-left: 2rem;
 }
 .icons{
   font-size: 2.8rem;
   color: white;
   cursor: pointer;
   display: none;
+}
+.auto__grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
 }
